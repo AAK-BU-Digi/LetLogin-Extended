@@ -1,0 +1,29 @@
+{
+  "name": "Tabulex Fravær Login",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Kom korrekt igennem Login til Tabulex Fravær",
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "broker.js"
+      ],
+      "matches": [
+        "https://saml.personale.tabulex.dk/simplesaml/*"
+// https://saml.personale.tabulex.dk/simplesaml/module.php/istdisco/disco.php?entityID=https%3A%2F%2Fsaml.personale.tabulex.dk&return=https%3A%2F%2Fsaml.personale.tabulex.dk%2Fsimplesaml%2Fmodule.php%2Fsaml%2Fsp%2Fdiscoresp.php%3FAuthID%3D_7d8f223a8386449dda92b7fd0851cdb5668781ddc0&returnIDParam=idpentityid        
+      ],
+      "exclude_globs": [
+ //       "*post-broker-login*"
+      ]
+
+    }
+   
+  ],
+    "icons": {
+    "16": "Icons/LetLogin2-16.png",
+    "48": "Icons/LetLogin2-48.png",
+    "128": "Icons/LetLogin2-128.png"
+   }
+}

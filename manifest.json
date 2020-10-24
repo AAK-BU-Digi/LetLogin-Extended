@@ -1,24 +1,38 @@
 {
-  "name": "Tabulex Fravær Login",
+  "name": "LetLogin Extended",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Kom korrekt igennem Login til Tabulex Fravær",
+  "description": "LetLogin Extended XXXXXXXXXXXXX",
   "permissions": [
+  "webRequest",
+   "*://fravaer.tabulex.net/"
   ],
   "content_scripts": [
     {
+     //skal den være her?
+     
+     "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
       "js": [
-        "broker.js"
+        "forward.js"
       ],
       "matches": [
-        "https://saml.personale.tabulex.dk/simplesaml/*"
+        "https://saml.personale.tabulex.dk/simplesaml/*",
+        "https://broker.unilogin.dk/auth/realms/broker/*",
+        "https://fravaer.tabulex.net/"
       ],
       "exclude_globs": [
+              "*post-broker-login*"
       ]
 
     }
    
   ],
+  
+
+  
     "icons": {
     "16": "Icons/LetLogin2-16.png",
     "48": "Icons/LetLogin2-48.png",

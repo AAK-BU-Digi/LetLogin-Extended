@@ -6,7 +6,6 @@
   "permissions": [
 //   "*://fravaer.tabulex.net/"
         "webRequest",
-        "webRequestBlocking",
         "*://*/*"
   ],
   "background": {

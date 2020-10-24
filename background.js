@@ -21,3 +21,7 @@ function handleTabulexCookie() {
     console.log("diller");
     chrome.cookies.remove({"url": "https://fravaer.tabulex.net", "name": "SRVID"}, function(deleted_cookie) { console.log(deleted_cookie);});
           }
+
+
+// https://stackoverflow.com/questions/37896287/removing-the-cookies-before-page-load#comment63281822_37898410
+

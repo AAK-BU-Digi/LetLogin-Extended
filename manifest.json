@@ -4,17 +4,18 @@
   "manifest_version": 2,
   "description": "LetLogin Extended XXXXXXXXXXXXX",
   "permissions": [
-  "webRequest",
-   "*://fravaer.tabulex.net/"
+//   "*://fravaer.tabulex.net/"
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
   ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
   "content_scripts": [
     {
-     //skal den være her?
-     
-     "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
       "js": [
         "forward.js"
       ],
@@ -30,9 +31,6 @@
     }
    
   ],
-  
-
-  
     "icons": {
     "16": "Icons/LetLogin2-16.png",
     "48": "Icons/LetLogin2-48.png",

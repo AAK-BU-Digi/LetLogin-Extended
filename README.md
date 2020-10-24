@@ -1,3 +1,3 @@
-# Tablux-fav-r-login
+# LetLogin Extended
 Letter loginvalget, da det kan gøres forkert...
 

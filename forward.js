@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 const hostname = location.host;
 // console.log(hostname);  Kan bruges til at finde hostname
 

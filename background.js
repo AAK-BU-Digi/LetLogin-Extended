@@ -1,27 +1,25 @@
 'use strict';
 
-// chrome.webRequest.onBeforeRequest.addListener(
-//        function(details) {
-//            handleTabulexCookie(); 
-//            return {cancel: true};},
-//                {urls: ["*://fravaer.tabulex.net/"]},
-//                ["blocking"]);
-
-
-chrome.webRequest.onBeforeRequest.addListener(
-        function(details) {
-            handleTabulexCookie();
-                           return {cancel: true}; 
-        },
-        {urls: ["*://fravaer.tabulex.net/*"]},
-        ["blocking"]);
-
-
-function handleTabulexCookie() {
-    console.log("diller");
-    chrome.cookies.remove({"url": "https://fravaer.tabulex.net", "name": "SRVID"}, function(deleted_cookie) { console.log(deleted_cookie);});
+chrome.webRequest.onBeforeSendHeaders.addListener(    
+    function(details) {
+          for (var i = 0; i < details.requestHeaders.length; ++i) {
+            if(details.requestHeaders[i].name === 'Cookie') {
+                
+              details.requestHeaders[i].value = details.requestHeaders[i].value.replace ('idpdisco_istidpdisco_lastidp=https%3A%2F%2Fadfs.aarhuskommune.dk%2Fadfs%2Fservices%2Ftrust','idpdisco_istidpdisco_lastidp=https%3A%2F%2Fatlas.uni-login.dk%2Fsimplesaml%2Fsaml2%2Fidp%2Fmetadata.php')
+                  
+                
+                
+                
+                
+                
+//             details.requestHeaders[i].value = '';
+              break;
+             }
           }
+          return {requestHeaders: details.requestHeaders};
+        },
+        {urls: ["<all_urls>"]},
+    
+        ["blocking", "requestHeaders", "extraHeaders"]);
 
-
-// https://stackoverflow.com/questions/37896287/removing-the-cookies-before-page-load#comment63281822_37898410
 

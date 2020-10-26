@@ -15,12 +15,11 @@ switch(hostname) {
 }
 
 
-
 function handleTabulex() {
     const buttons = document.getElementsByTagName("button"); // getElementsById hvis knappen har et id
     console.log (location);
     for (const button of buttons) {
- //       inspectTabulexButton(button);
+        inspectTabulexButton(button);
     }
 }
               

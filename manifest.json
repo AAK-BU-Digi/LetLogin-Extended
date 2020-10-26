@@ -3,15 +3,14 @@
   "version": "1.0",
   "manifest_version": 2,
   "description": "LetLogin Extended XXXXXXXXXXXXX",
+  
   "permissions": [
-//   "*://fravaer.tabulex.net/"
         "webRequest",
-        "<all_urls>"
+        "webRequestBlocking",
+        "https://fravaer.tabulex.net/*",
+        "https://saml.personale.tabulex.dk/*"
   ],
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": true
-  },
+
   
   "content_scripts": [
     {
@@ -30,6 +29,12 @@
     }
    
   ],
+  
+    "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  
     "icons": {
     "16": "Icons/LetLogin2-16.png",
     "48": "Icons/LetLogin2-48.png",

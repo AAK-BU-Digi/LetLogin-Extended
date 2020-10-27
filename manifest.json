@@ -24,7 +24,7 @@
       ],
       "exclude_globs": [
               "*post-broker-login*"
-              "https://fravaer.tabulex.net/Home/Logud"
+              "*fravaer.tabulex.net/Home/Logud*"
       ]
 
     }

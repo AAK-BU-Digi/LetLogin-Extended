@@ -23,7 +23,7 @@
         "https://fravaer.tabulex.net/"
       ],
       "exclude_globs": [
-              "*post-broker-login*"
+              "*post-broker-login*",
               "*fravaer.tabulex.net/Home/Logud*"
       ]
 

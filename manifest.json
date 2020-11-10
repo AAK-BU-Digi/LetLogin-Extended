@@ -1,6 +1,6 @@
 {
   "name": "LetLogin Extended",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 2,
   "description": "LetLogin Extended XXXXXXXXXXXXX",
   
@@ -8,7 +8,8 @@
         "webRequest",
         "webRequestBlocking",
         "https://fravaer.tabulex.net/*",
-        "https://saml.personale.tabulex.dk/*"
+        "https://saml.personale.tabulex.dk/*",
+        "https://drive.google.com/*"
   ],
 
   
@@ -20,7 +21,8 @@
       "matches": [
         "https://saml.personale.tabulex.dk/simplesaml/*",
         "https://broker.unilogin.dk/auth/realms/broker/*",
-        "https://fravaer.tabulex.net/"
+        "https://fravaer.tabulex.net/",
+        "https://drive.google.com/*"
       ],
       "exclude_globs": [
               "*post-broker-login*",

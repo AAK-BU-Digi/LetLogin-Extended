@@ -43,13 +43,13 @@ function handleDrive() {
         
         let downloadLink = 'https://drive.google.com/uc?id=' + fid ;
 
-        if(title.innerHTML.includes('Direkte link')) return; 
+        if(title.innerHTML.includes('Direkte link til billede')) return; 
 
-        title.innerHTML = title.innerHTML + '<a href="' + downloadLink + ' "target="_blank"" " style="font-size: 0.8rem; margin-left: 20px; target-new: window" >Direkte link</a>'
+        title.innerHTML = title.innerHTML + '<a href="' + downloadLink + ' "target="_blank"" " style="font-size: 0.8rem; margin-left: 20px; target-new: window" >Direkte link til billede</a>'
 
     }, 1000)
 }
-              
+
 function inspectTabulexButton(button) {
 
     const onClickAttribute=button.getAttribute('onclick');

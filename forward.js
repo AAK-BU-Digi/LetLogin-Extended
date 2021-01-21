@@ -1,7 +1,7 @@
 'use strict';
 
 const hostname = location.host;
-// console.log(hostname);  Kan bruges til at finde hostname
+// console.log(hostname);  Can be used to find the hostname.
 
 switch(hostname) {
     case 'saml.personale.tabulex.dk':
@@ -18,8 +18,8 @@ switch(hostname) {
 }
 
 function handleTabulex() {
-    const buttons = document.getElementsByTagName("button"); // getElementsById hvis knappen har et id
-    console.log (location);
+    const buttons = document.getElementsByTagName("button"); // getElementsById if the button has an ID
+//    console.log (location);
     for (const button of buttons) {
         inspectTabulexButton(button);
     }
@@ -81,3 +81,6 @@ function hide() {
     const rootElement = document.documentElement;
     rootElement.hidden = true;
 }
+
+
+

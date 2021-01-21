@@ -1,14 +1,18 @@
 {
   "name": "LetLogin",
-  "version": "1.7",
+  "version": "1.8",
   "manifest_version": 2,
   "description": "LetLogin",
   
   "permissions": [
         "webRequest",
         "webRequestBlocking",
+        "cookies",
+        "tabs",
         "https://fravaer.tabulex.net/*",
         "https://saml.personale.tabulex.dk/*",
+        "*://www.youtube.com/",
+        "https://www.youtube.com/",
         "https://drive.google.com/*"
   ],
 
@@ -22,11 +26,15 @@
         "https://saml.personale.tabulex.dk/simplesaml/*",
         "https://broker.unilogin.dk/auth/realms/broker/*",
         "https://fravaer.tabulex.net/",
-        "https://drive.google.com/*"
+        "https://drive.google.com/*" 
+        
       ],
+     
       "exclude_globs": [
               "*post-broker-login*",
-              "*fravaer.tabulex.net/Home/Logud*"
+              "*fravaer.tabulex.net/Home/Logud*",
+              "*://youtube.com/",
+              "*consent.youtube.com*"
       ]
 
     }

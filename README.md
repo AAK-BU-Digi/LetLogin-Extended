@@ -3,7 +3,7 @@ En extension som letter brugerens flow igennem STILs UNI-login broker, bøvl med
 
 For at gøre det nemmere for brugerne af UNI-login og kommunal IdP, har Aarhus Kommune, Børn og Unge valgt at lave en tilføjelse til Chrome. Denne tilføjelse tager automatisk valgene "Log ind med f.eks. NemID" og valg af IdP, fx. Aarhus for brugeren.
 
-For at gøre tilføjelsen klar til brug skal koden hentes her fra GitHub og pakkes ud. Pak zip-filen ud. Herefter skal id'et fra STILs IdP vælger ændres i broker.js på linje 15. Se /docs/idp-liste.txt - eller find den i kildekoden på broker.unilogin.dk.
+For at gøre tilføjelsen klar til brug skal koden hentes her fra GitHub og pakkes ud. Pak zip-filen ud. Herefter skal id'et fra STILs IdP vælger ændres i broker.js på linje 74. Se /docs/idp-liste.txt - eller find den i kildekoden på broker.unilogin.dk. (søg efter " selectedIdp.setAttribute("value", "aarhus"); ")
 
 Herefter kan du lave de fornødne rettelser, fx IdP.
 

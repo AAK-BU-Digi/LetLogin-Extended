@@ -3,6 +3,8 @@
 const hostname = location.host;
 // console.log(hostname);  Can be used to find the hostname.
 
+
+// If you dont want to use all the functions of LetLogin, comment out all three lines of code connected to the function you dont need. Fx. comment out line 9-11 if you dont want automatic direction to UNI-login broker in Tabulex
 switch(hostname) {
     case 'saml.personale.tabulex.dk':
        handleTabulex();

@@ -15,7 +15,6 @@
         "https://www.youtube.com/",
         "https://drive.google.com/*"
   ],
-
   
   "content_scripts": [
     {
@@ -23,7 +22,7 @@
         "forward.js"
       ],
       "matches": [
-        "https://saml.personale.tabulex.dk/simplesaml/*",
+        "https://saml.personale.tabulex.dk/simplesaml/*", 
         "https://broker.unilogin.dk/auth/realms/broker/*",
         "https://fravaer.tabulex.net/",
         "https://drive.google.com/*" 

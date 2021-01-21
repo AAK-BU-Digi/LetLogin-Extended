@@ -1,6 +1,6 @@
 'use strict';
 
-// handle login with portal Tabulex and Tabulex Tea login. Force the use of UNI-login.
+// handle login with portal Tabulex and Tabulex Tea login. Force the use of UNI-login. Fjern eller kommenter alle linjerne ud til "handle Youtube cookies", hvis denne ikke ønskes. 
 
 chrome.webRequest.onBeforeSendHeaders.addListener(    
     function(details) {
@@ -21,7 +21,8 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     
         ["blocking", "requestHeaders", "extraHeaders"]);
 
-// handle Youtube cookies. When using Youtube without permission to log in, playing videoes can sometimes cause problems.
+// handle Youtube cookies. 
+// When using Youtube without permission to log in, playing videoes can sometimes cause problems.
 
 var requestMade = false;
 

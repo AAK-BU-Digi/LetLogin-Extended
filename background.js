@@ -24,6 +24,8 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 // handle Youtube cookies. 
 // When using Youtube without permission to log in, playing videoes can sometimes cause problems.
 
+/*
+
 var requestMade = false;
 
 chrome.webRequest.onBeforeRequest.addListener(
@@ -33,7 +35,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 
       chrome.cookies.getAll({ url: url.origin }, function (cookies) {
         if (cookies.length === 0) {
-//            console.log(cookies + "deleted");
+            console.log(cookies + "deleted");
           return;
         } else {
           cookies.forEach((c) =>
@@ -52,5 +54,11 @@ chrome.webRequest.onBeforeRequest.addListener(
       }, 20000);
     }
   },
-  { urls: ["*://www.youtube.com/*"] }
+  { urls: ["*://youtube.com/*"] }
 );
+
+*/
+
+// note til manifest.json
+//              "*://youtube.com/",
+//              "*consent.youtube.com*"

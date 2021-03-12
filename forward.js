@@ -73,7 +73,7 @@ function handleUnilogin() {
         const selectedIdp = document.createElement("input");
         selectedIdp.setAttribute("type", "hidden");
         selectedIdp.setAttribute("name", "selectedIdp");
-        selectedIdp.setAttribute("value", "aarhus");
+        selectedIdp.setAttribute("value", "aarhusaarhuscloud");
         form.appendChild(selectedIdp);
         form.submit();
     }

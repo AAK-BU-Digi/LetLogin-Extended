@@ -1,6 +1,6 @@
 {
   "name": "LetLogin",
-  "version": "1.8",
+  "version": "1.9.1",
   "manifest_version": 2,
   "description": "LetLogin",
   
@@ -9,11 +9,12 @@
         "webRequestBlocking",
         "cookies",
         "tabs",
-        "https://fravaer.tabulex.net/*",
-        "https://saml.personale.tabulex.dk/*",
-        "*://www.youtube.com/",
-        "https://www.youtube.com/",
-        "https://drive.google.com/*"
+        "*://fravaer.tabulex.net/*",
+        "*://saml.personale.tabulex.dk/*",
+        "https://consent.youtube.com/*",
+        "*://drive.google.com/*",
+        "*://login.aula.dk/"
+        
   ],
   
   "content_scripts": [
@@ -31,9 +32,8 @@
      
       "exclude_globs": [
               "*post-broker-login*",
-              "*fravaer.tabulex.net/Home/Logud*",
-              "*://youtube.com/",
-              "*consent.youtube.com*"
+              "*fravaer.tabulex.net/Home/Logud*"
+
       ]
 
     }

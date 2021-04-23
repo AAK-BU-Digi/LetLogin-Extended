@@ -1,6 +1,6 @@
 {
   "name": "LetLogin",
-  "version": "1.9.1",
+  "version": "1.9.3",
   "manifest_version": 2,
   "description": "LetLogin",
   
@@ -13,6 +13,7 @@
         "*://saml.personale.tabulex.dk/*",
         "https://consent.youtube.com/*",
         "*://drive.google.com/*",
+        "*://sfoweb.dk/*",
         "*://login.aula.dk/"
         
   ],

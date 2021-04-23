@@ -70,7 +70,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 //    }
 //
   },
-  { urls: ["https://login.aula.dk/*", "https://consent.youtube.com/*"] }
+  { urls: ["https://login.aula.dk/*", "https://consent.youtube.com/*", "https://sfoweb.dk/*"] }
 );
 
 
